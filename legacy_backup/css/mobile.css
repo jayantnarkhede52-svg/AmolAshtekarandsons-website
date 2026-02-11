@@ -1,0 +1,401 @@
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    z-index: 1001;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    /* Increased touch target */
+    margin-right: 15px;
+}
+
+/* Accessibility: Skip Link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 10px 15px;
+    z-index: 9999;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 10px;
+    outline: 2px solid var(--secondary-color);
+}
+
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex !important;
+        transform: none !important;
+        position: static !important;
+        height: auto !important;
+        background: none !important;
+        flex-direction: row !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* UNIVERSAL MOBILE RESET */
+    * {
+        max-width: 100vw;
+        /* Prevent any element from exceeding viewport width */
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative;
+    }
+
+    /* Force images to behave */
+    img,
+    video,
+    canvas,
+    svg {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Container safeguard */
+    .container {
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        overflow-x: hidden;
+    }
+
+    /* Navigation */
+    .hamburger {
+        display: block !important;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    /* Hide all nav links by default on mobile - only show in hamburger menu */
+    .nav-links li {
+        list-style: none;
+        width: 100%;
+        /* Full width for clickable area */
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        /* Make whole strip clickable */
+        padding: 15px 0;
+        /* Center padding */
+        font-size: 1.1rem;
+        /* Readable font size */
+        white-space: nowrap;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        /* Separator */
+    }
+
+    /* Navigation Fix */
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        height: calc(100vh - 80px);
+        width: 100vw;
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        gap: 0;
+
+        /* Animation State: Hidden */
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 0.4s,
+            opacity 0.4s;
+
+        z-index: 999;
+        border-top: 1px solid var(--light-border);
+        display: flex !important;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        /* Animation State: Visible */
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Force hide desktop links when not active (managed by JS primarily, but ensure base state) */
+    nav ul {
+        display: none;
+        /* Hide default UL if not wrapped correctly, though nav-links handles this */
+    }
+
+    /* Fix Detailed Categories Stacking */
+    .category-row,
+    .category-row.reverse {
+        flex-direction: column !important;
+        gap: 20px !important;
+        text-align: center;
+    }
+
+    .category-row .cat-img {
+        width: 100%;
+    }
+
+    .category-row .cat-text {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Prevent Horizontal Scroll */
+    body,
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Typography Adjustments */
+    h1 {
+        font-size: 2.2rem;
+        /* reduced from 3.5rem */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        /* reduced from 2.5rem */
+    }
+
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Layout Adjustments */
+    .section-padding {
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .gold-rate-bar .container {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.8rem;
+    }
+
+    /* Intro Section */
+    .intro-content-wrapper {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    .intro-image {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    /* Premium Showcase Mobile */
+    .showcase-grid,
+    .services-grid,
+    .collection-grid,
+    .testimonial-grid,
+    .faq-grid,
+    .features-grid,
+    .contact-container {
+        grid-template-columns: 1fr !important;
+        /* Stack on mobile */
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+
+    /* Category Rows Mobile Fix - Explore Our World Section */
+    .category-row,
+    .category-row.reverse {
+        margin-bottom: 50px !important;
+        flex-direction: column !important;
+        /* Force stack */
+        gap: 20px !important;
+    }
+
+    /* Image on TOP */
+    .category-row .cat-img {
+        order: 1;
+        /* First */
+        height: 300px !important;
+        width: 100% !important;
+        max-width: 100%;
+        flex: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        /* Clean look */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Text BELOW */
+    .category-row .cat-text {
+        order: 2;
+        /* Second */
+        width: 100% !important;
+        flex: 1;
+        text-align: center !important;
+        padding: 0 15px;
+    }
+
+    .category-row .cat-img img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    .category-row .cat-text h3 {
+        font-size: 1.6rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    .category-row .cat-text p {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Collection Grid Mobile Responsive */
+    .collection-item {
+        height: 250px !important;
+    }
+
+    .collection-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    .collection-info {
+        bottom: 15px !important;
+        left: 20px !important;
+        right: 20px !important;
+        padding: 12px !important;
+    }
+
+    .collection-info h3 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Showcase Grid Mobile */
+    .showcase-item {
+        min-height: 200px;
+        width: 100%;
+    }
+
+    .showcase-item img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
+
+    /* Heritage Section Mobile */
+    .heritage-content {
+        flex-direction: column !important;
+    }
+
+    .heritage-image {
+        width: 100% !important;
+    }
+
+    .heritage-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+
+    /* WhatsApp Button Mobile Fix */
+    .whatsapp-float {
+        width: 50px !important;
+        height: 50px !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        font-size: 24px !important;
+        z-index: 998 !important;
+    }
+
+    /* Header Mobile Fix */
+    header {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    nav {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    /* Ensure all sections fit properly */
+    section {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .featured-collections {
+        width: 100%;
+        padding: 50px 0 !important;
+    }
+
+    .detailed-categories {
+        width: 100%;
+        padding: 50px 0 !important;
+    }
+
+    /* Showcase Grid - Make responsive on mobile */
+    .showcase-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        margin-top: 0;
+    }
+
+    .showcase-item {
+        width: 100%;
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+    .showcase-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+}

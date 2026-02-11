@@ -1,0 +1,11 @@
+
+# Vercel Ignore File
+*.py
+*.ps1
+*.log
+.env
+.git
+.gitignore
+README.md
+task.md
+implementation_plan.md
