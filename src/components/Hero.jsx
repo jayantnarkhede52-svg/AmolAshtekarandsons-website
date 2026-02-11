@@ -39,7 +39,7 @@ const Hero = () => {
     }, [slides.length]);
 
     return (
-        <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-black">
+        <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-black pt-20 md:pt-24">
             {/* Background Slideshow */}
             <AnimatePresence mode="popLayout">
                 <motion.div

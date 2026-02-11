@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 {/* Brand Column */}
                 <div>
-                    <img src={logo} alt="Amol Ashtekar & Sons" className="h-16 w-auto mb-6 object-contain" />
+                    <img src={logo} alt="Amol Ashtekar & Sons" className="h-16 w-auto mb-6 object-contain invert brightness-0 contrast-200 drop-shadow-[0_2px_12px_rgba(184,134,11,0.4)]" />
                     <p className="text-gray-400 mb-8 leading-relaxed">
                         Crafting timeless elegance since 1971. A legacy of trust, purity, and artistic excellence in every piece of jewellery.
                     </p>

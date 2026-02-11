@@ -81,7 +81,7 @@ const Header = () => {
                             <img
                                 src={logo}
                                 alt="Amol Ashtekar & Sons"
-                                className="h-10 md:h-14 w-auto object-contain mix-blend-multiply transition-transform duration-300 hover:scale-105"
+                                className="h-10 md:h-14 w-auto object-contain mix-blend-multiply transition-transform duration-300 hover:scale-105 contrast-110 brightness-105 drop-shadow-[0_2px_8px_rgba(184,134,11,0.3)]"
                             />
                         </Link>
                     </div>
