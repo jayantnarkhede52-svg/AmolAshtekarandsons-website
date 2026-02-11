@@ -56,33 +56,29 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="container mx-auto px-6 flex justify-between items-center py-2 md:py-4">
-                    {/* Mobile Menu & Search Toggle */}
-                    <div className="lg:hidden flex gap-4">
+                <div className="container mx-auto px-4 md:px-6 flex justify-between items-center py-3 md:py-4">
+                    {/* Mobile Menu Button - Left */}
+                    <div className="lg:hidden flex items-center">
                         <button
-                            className="text-primary-color hover:text-secondary-color transition-colors"
+                            className="text-primary-color hover:text-secondary-color transition-colors p-1"
                             onClick={() => setIsMobileMenuOpen(true)}
                             aria-label="Open Menu"
                         >
                             <Menu size={24} strokeWidth={1.5} />
                         </button>
-                        <button
-                            className="text-primary-color hover:text-secondary-color transition-colors"
-                            onClick={() => setIsSearchOpen(true)}
-                            aria-label="Open Search"
-                        >
-                            <Search size={24} strokeWidth={1.5} />
-                        </button>
                     </div>
 
                     {/* Logo - Centered on Mobile, Left on Desktop */}
-                    <div className="logo flex-shrink-0 flex items-center justify-center lg:justify-start w-full lg:w-auto">
-                        <Link to="/" aria-label="Amol Ashtekar & Sons Home">
+                    <div className="logo flex-shrink-0 flex items-center justify-center lg:justify-start absolute left-1/2 -translate-x-1/2 lg:relative lg:left-auto lg:translate-x-0">
+                        <Link to="/" aria-label="Amol Ashtekar & Sons Home" className="flex flex-col items-center gap-0">
                             <img
                                 src={logo}
                                 alt="Amol Ashtekar & Sons"
-                                className="h-10 md:h-14 w-auto object-contain mix-blend-multiply transition-transform duration-300 hover:scale-105 contrast-110 brightness-105 drop-shadow-[0_2px_8px_rgba(184,134,11,0.3)]"
+                                className="h-20 md:h-24 lg:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 hover:scale-105 contrast-110 brightness-105 drop-shadow-[0_2px_8px_rgba(184,134,11,0.3)]"
                             />
+                            <span className="text-primary-color font-serif text-base md:text-lg lg:text-sm font-bold tracking-[0.3em] uppercase drop-shadow-sm -mt-1">
+                                Since 1971
+                            </span>
                         </Link>
                     </div>
 
@@ -100,7 +96,7 @@ const Header = () => {
                         ))}
                     </nav>
 
-                    {/* Icons - Right */}
+                    {/* Desktop Icons - Right */}
                     <div className="flex gap-6 items-center flex-shrink-0 hidden lg:flex">
                         <button
                             onClick={() => setIsSearchOpen(true)}
@@ -115,8 +111,16 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    {/* Mobile Cart/Search placeholder */}
-                    <div className="lg:hidden w-8"></div>
+                    {/* Mobile Search Button - Right */}
+                    <div className="lg:hidden flex items-center">
+                        <button
+                            className="text-primary-color hover:text-secondary-color transition-colors p-1"
+                            onClick={() => setIsSearchOpen(true)}
+                            aria-label="Open Search"
+                        >
+                            <Search size={24} strokeWidth={1.5} />
+                        </button>
+                    </div>
                 </div>
             </header >
 
