@@ -53,6 +53,9 @@ const Hero = () => {
                     <img
                         src={slides[currentSlide].image}
                         alt={slides[currentSlide].title}
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
                         className="w-full h-full object-cover opacity-60"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90"></div>
@@ -74,9 +77,9 @@ const Hero = () => {
                         </h2>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-normal mb-8 leading-tight text-white drop-shadow-2xl">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-normal mb-8 leading-tight text-white drop-shadow-2xl">
                         AMOL ASHTEKAR <br />
-                        <span className="italic font-light text-secondary-color text-4xl md:text-6xl lg:text-7xl block mt-2 font-heading">
+                        <span className="italic font-light text-secondary-color text-3xl md:text-5xl lg:text-6xl block mt-2 font-heading">
                             & Sons
                         </span>
                     </h1>

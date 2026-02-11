@@ -55,6 +55,8 @@ const SilverArticles = () => {
                             <img
                                 src={imgSrc}
                                 alt={`Silver Article ${index + 1}`}
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">

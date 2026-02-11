@@ -74,7 +74,9 @@ const Header = () => {
                             <img
                                 src={logo}
                                 alt="Amol Ashtekar & Sons"
-                                className="h-20 md:h-24 lg:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 hover:scale-105 contrast-110 brightness-105 drop-shadow-[0_2px_8px_rgba(184,134,11,0.3)]"
+                                loading="eager"
+                                fetchpriority="high"
+                                className="h-28 md:h-32 lg:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 hover:scale-105 contrast-110 brightness-105 drop-shadow-[0_2px_8px_rgba(184,134,11,0.3)]"
                             />
                             <span className="text-primary-color font-serif text-base md:text-lg lg:text-sm font-bold tracking-[0.3em] uppercase drop-shadow-sm -mt-1">
                                 Since 1971

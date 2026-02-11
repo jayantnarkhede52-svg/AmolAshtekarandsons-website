@@ -62,6 +62,8 @@ const About = () => {
                             <img
                                 src={founder1}
                                 alt="Director Amol Suresh Ashtekar"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                             />
                         </div>
@@ -74,6 +76,8 @@ const About = () => {
                             <img
                                 src={founder3}
                                 alt="Late. Shree Suresh Uttamrao Ashtekar"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                             />
                             {/* Premium Badge */}
@@ -90,6 +94,8 @@ const About = () => {
                             <img
                                 src={founder2}
                                 alt="Director Sau. Pooja Amol Ashtekar"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                             />
                         </div>
