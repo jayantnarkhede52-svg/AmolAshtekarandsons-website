@@ -26,7 +26,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="pt-32 pb-20 container mx-auto px-4">
+        <div className="pt-44 pb-20 container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-color mb-8 text-center">Our Services</h1>
             <div className="w-24 h-1 bg-secondary-color mx-auto mb-16"></div>
 

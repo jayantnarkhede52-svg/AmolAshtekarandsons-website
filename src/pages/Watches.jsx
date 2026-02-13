@@ -21,7 +21,7 @@ const Watches = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-bg-cream">
+        <div className="pt-40 min-h-screen bg-bg-cream">
             <div className="container mx-auto px-4 py-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

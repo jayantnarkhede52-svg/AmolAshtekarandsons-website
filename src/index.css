@@ -11,9 +11,9 @@
     --color-secondary-light: #E5CD83;
     /* Soft Gold */
     --color-text-dark: #121212;
-    /* Nearly Black */
-    --color-text-light: #5A5A5A;
-    /* Dark Gray */
+    /* Nearly Black - High Contrast */
+    --color-text-light: #1A1A1A;
+    /* Much Darker - Maximum Contrast */
     --color-bg-cream: #FFFCF5;
     /* Warmer Cream */
     --color-gold: #CCA43B;
@@ -76,13 +76,24 @@
     h6 {
         font-family: var(--font-heading);
         color: var(--color-primary-color);
-        font-weight: 500;
-        /* Lighter weight for elegance */
+        font-weight: 600;
         letter-spacing: -0.02em;
+    }
+
+    h1 {
+        font-weight: 700;
+        text-shadow: 0 2px 4px rgba(88, 8, 8, 0.15);
+        /* Enhanced visibility with subtle shadow */
+    }
+
+    h2 {
+        text-shadow: 0 1px 3px rgba(88, 8, 8, 0.1);
     }
 
     p {
         line-height: 1.7;
+        color: var(--color-text-dark);
+        font-weight: 500;
     }
 }
 

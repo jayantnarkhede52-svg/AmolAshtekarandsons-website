@@ -66,7 +66,7 @@ const FAQ = () => {
     ];
 
     return (
-        <div className="pt-32 pb-24 min-h-screen bg-bg-cream">
+        <div className="pt-44 pb-24 min-h-screen bg-bg-cream">
             <div className="container mx-auto px-4 max-w-4xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
