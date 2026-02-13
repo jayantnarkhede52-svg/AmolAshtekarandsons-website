@@ -36,13 +36,13 @@ const Home = () => {
                         {collections.map((item, index) => (
                             <Link to="/collections" key={index} className="group relative overflow-hidden cursor-pointer block h-[400px]">
                                 <div className="w-full h-full bg-gray-100 relative">
-                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500 z-10"></div>
+                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500 z-10 pointer-events-none"></div>
                                     <PremiumImage
                                         src={item.image}
                                         alt={item.title}
                                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
                                     />
-                                    <div className="absolute inset-0 flex flex-col justify-end p-6 z-20">
+                                    <div className="absolute inset-0 flex flex-col justify-end p-6 z-20 pointer-events-none">
                                         <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                             <span className="text-[10px] font-semibold text-secondary-light uppercase tracking-[0.2em] block mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                                                 {item.subtitle}
