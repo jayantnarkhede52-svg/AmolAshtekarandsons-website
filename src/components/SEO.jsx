@@ -70,6 +70,17 @@ const SEO = ({ title, description, keywords, canonicalUrl }) => {
             <meta name="twitter:title" content={pageTitle} />
             <meta name="twitter:description" content={pageDescription} />
 
+            {/* Google Analytics */}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ET9272RFW"></script>
+            <script>
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-9ET9272RFW');
+                `}
+            </script>
+
             {/* Local Business Schema (JSON-LD) */}
             <script type="application/ld+json">
                 {`
