@@ -55,20 +55,65 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-heading font-semibold mb-6 tracking-wide text-gold">Contact Us</h3>
                     <ul className="space-y-6 text-gray-400">
-                        <li className="flex gap-4 items-start">
-                            <MapPin size={20} className="text-gold shrink-0 mt-1" />
-                            <span>
-                                Shop No. 4, Saraf Bazaar,<br />
-                                Main Road, Nashik - 422001
-                            </span>
+                        {/* Branch 1 - Anand Mall */}
+                        <li>
+                            <div className="flex gap-4 items-start mb-2">
+                                <MapPin size={20} className="text-gold shrink-0 mt-1" />
+                                <div>
+                                    <p className="text-white font-medium mb-1">Branch 1 - Anand Mall</p>
+                                    <p className="text-sm leading-relaxed">
+                                        Anand mall shop no 5&6,<br />
+                                        near kanya kothari school,<br />
+                                        jail road, nashik road 422101
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex gap-4 items-start ml-9">
+                                <div className="text-sm">
+                                    <a href="tel:+919822733333" className="hover:text-gold transition-colors block">
+                                        98227 33333
+                                    </a>
+                                    <a href="tel:+919730888800" className="hover:text-gold transition-colors block">
+                                        9730888800
+                                    </a>
+                                    <a href="tel:+919850000029" className="hover:text-gold transition-colors block">
+                                        9850000029
+                                    </a>
+                                </div>
+                            </div>
                         </li>
-                        <li className="flex gap-4 items-center">
-                            <Phone size={20} className="text-gold shrink-0" />
-                            <a href="tel:+919822733333" className="hover:text-gold transition-colors">
-                                +91 98227 33333
-                            </a>
+
+                        {/* Branch 2 - Esteem Tower */}
+                        <li className="pt-4 border-t border-white/10">
+                            <div className="flex gap-4 items-start mb-2">
+                                <MapPin size={20} className="text-gold shrink-0 mt-1" />
+                                <div>
+                                    <p className="text-white font-medium mb-1">Branch 2 - Esteem Tower</p>
+                                    <p className="text-sm leading-relaxed">
+                                        Amol Ashtekar and sons<br />
+                                        Esteem tower shop no.4<br />
+                                        infront of Guru nanak petrol pump,<br />
+                                        station road, nashik road 422101
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex gap-4 items-start ml-9">
+                                <div className="text-sm">
+                                    <a href="tel:+919822733333" className="hover:text-gold transition-colors block">
+                                        9822733333
+                                    </a>
+                                    <a href="tel:+919730888800" className="hover:text-gold transition-colors block">
+                                        9730888800
+                                    </a>
+                                    <a href="tel:+919850000029" className="hover:text-gold transition-colors block">
+                                        9850000029
+                                    </a>
+                                </div>
+                            </div>
                         </li>
-                        <li className="flex gap-4 items-center">
+
+                        {/* Email */}
+                        <li className="flex gap-4 items-center pt-4 border-t border-white/10">
                             <Mail size={20} className="text-gold shrink-0" />
                             <a href="mailto:amolashtekarandsons@gmail.com" className="hover:text-gold transition-colors">
                                 amolashtekarandsons@gmail.com
