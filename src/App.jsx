@@ -14,6 +14,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Collections = lazy(() => import('./pages/Collections'));
 const Bangles = lazy(() => import('./pages/Bangles'));
 const Necklaces = lazy(() => import('./pages/Necklaces'));
+const Rings = lazy(() => import('./pages/Rings'));
 const SilverArticles = lazy(() => import('./pages/SilverArticles'));
 const Watches = lazy(() => import('./pages/Watches'));
 const MensWatches = lazy(() => import('./pages/MensWatches'));
@@ -44,6 +45,7 @@ function App() {
                         <Route path="/collections" element={<Collections />} />
                         <Route path="/collections/bangles" element={<Bangles />} />
                         <Route path="/collections/necklaces" element={<Necklaces />} />
+                        <Route path="/collections/rings" element={<Rings />} />
                         <Route path="/collections/silver-articles" element={<SilverArticles />} />
                         <Route path="/collections/watches" element={<Watches />} />
                         <Route path="/collections/watches/men" element={<MensWatches />} />
