@@ -46,15 +46,6 @@ const Header = () => {
                     : 'bg-white/80 backdrop-blur-sm'
                     }`}
             >
-                {/* Gold & Silver Rates Ticker */}
-                <div className="bg-primary-dark text-secondary-color text-[10px] md:text-xs py-1.5 overflow-hidden relative tracking-wider font-medium uppercase border-b border-gold/30">
-                    <div className="animate-marquee whitespace-nowrap flex gap-16 w-max mx-auto md:w-full md:justify-center md:animate-none">
-                        <span>Today's Rates:</span>
-                        <span className="flex items-center gap-2">Example Gold (24K): <span className="text-white">₹7,650/g</span></span>
-                        <span className="flex items-center gap-2">Gold (22K): <span className="text-white">₹7,050/g</span></span>
-                        <span className="flex items-center gap-2">Silver: <span className="text-white">₹92.50/g</span></span>
-                    </div>
-                </div>
 
                 <div className="container mx-auto px-4 md:px-6 flex justify-between items-center py-3 md:py-4">
                     {/* Mobile Menu Button - Left */}

@@ -5,7 +5,7 @@ import Welcome from '../components/Welcome';
 import Features from '../components/Features';
 import PremiumImage from '../components/PremiumImage';
 
-import silverImg from '../assets/silver.png';
+import silverImg from '../assets/silver.webp';
 import bridalImg from '../assets/hero-bride-v2.jpg';
 import gemstonesImg from '../assets/gemstones-new.jpg';
 

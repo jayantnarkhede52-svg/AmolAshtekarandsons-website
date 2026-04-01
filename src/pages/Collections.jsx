@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-import ringImg from '../assets/rings.png';
-import necklaceImg from '../assets/necklace.png';
-import bangleImg from '../assets/bangles.png';
+import ringImg from '../assets/rings.webp';
+import necklaceImg from '../assets/necklace.webp';
+import bangleImg from '../assets/bangles.webp';
 import bridalImg from '../assets/bridal.png';
 
-import silverImg from '../assets/silver.png';
+import silverImg from '../assets/silver.webp';
 import watchesImg from '../assets/watches-new.jpg';
 
 const Collections = () => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import bridalImg from '../assets/hero-bride-v2.jpg';
-import silverImg from '../assets/silver.png';
+import silverImg from '../assets/silver.webp';
 import watchesImg from '../assets/watches-new.jpg';
 
 const Hero = () => {
