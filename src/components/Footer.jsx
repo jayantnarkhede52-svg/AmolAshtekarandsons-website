@@ -10,7 +10,7 @@ const Footer = () => {
                 {/* Brand Column */}
                 <div>
                     <img src={logo} alt="Amol Ashtekar & Sons" className="h-16 w-auto mb-6 object-contain invert brightness-0 contrast-200 drop-shadow-[0_2px_12px_rgba(184,134,11,0.4)]" />
-                    <p className="text-gray-400 mb-8 leading-relaxed">
+                    <p className="text-gray-300 mb-8 leading-relaxed">
                         Crafting timeless elegance since 1971. A legacy of trust, purity, and artistic excellence in every piece of jewellery.
                     </p>
                     <div className="flex gap-4">
@@ -29,7 +29,7 @@ const Footer = () => {
                 {/* Quick Links */}
                 <div>
                     <h3 className="text-lg font-heading font-semibold mb-6 tracking-wide text-gold">Quick Links</h3>
-                    <ul className="space-y-4 text-gray-400">
+                    <ul className="space-y-4 text-gray-300">
                         <li><a href="#" className="hover:text-gold transition-colors">Our Story</a></li>
                         <li><a href="#" className="hover:text-gold transition-colors">Gold Rate Today</a></li>
                         <li><a href="#" className="hover:text-gold transition-colors">Shop Collections</a></li>
@@ -42,7 +42,7 @@ const Footer = () => {
                 {/* Collections */}
                 <div>
                     <h3 className="text-lg font-heading font-semibold mb-6 tracking-wide text-gold">Collections</h3>
-                    <ul className="space-y-4 text-gray-400">
+                    <ul className="space-y-4 text-gray-300">
                         <li><a href="#" className="hover:text-gold transition-colors">Bridal Jewellery</a></li>
                         <li><a href="#" className="hover:text-gold transition-colors">1 Gram Gold Ornaments</a></li>
                         <li><a href="#" className="hover:text-gold transition-colors">92.50 Sterling Silver</a></li>
@@ -54,14 +54,14 @@ const Footer = () => {
                 {/* Contact Info */}
                 <div>
                     <h3 className="text-lg font-heading font-semibold mb-6 tracking-wide text-gold">Contact Us</h3>
-                    <ul className="space-y-6 text-gray-400">
+                    <ul className="space-y-6 text-gray-300">
                         {/* Branch 1 - Anand Mall */}
                         <li>
                             <div className="flex gap-4 items-start mb-2">
                                 <MapPin size={20} className="text-gold shrink-0 mt-1" />
                                 <div>
                                     <p className="text-white font-medium mb-1">Branch 1 - Anand Mall</p>
-                                    <p className="text-sm leading-relaxed">
+                                    <p className="text-sm leading-relaxed text-gray-300">
                                         Anand mall shop no 5&6,<br />
                                         near kanya kothari school,<br />
                                         jail road, nashik road 422101
@@ -89,7 +89,7 @@ const Footer = () => {
                                 <MapPin size={20} className="text-gold shrink-0 mt-1" />
                                 <div>
                                     <p className="text-white font-medium mb-1">Branch 2 - Esteem Tower</p>
-                                    <p className="text-sm leading-relaxed">
+                                    <p className="text-sm leading-relaxed text-gray-300">
                                         Amol Ashtekar and sons<br />
                                         Esteem tower shop no.4<br />
                                         infront of Guru nanak petrol pump,<br />
@@ -124,9 +124,9 @@ const Footer = () => {
             </div>
 
             {/* Bottom Footer */}
-            <div className="container border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                <p>&copy; 2026 Amol Ashtekar & Sons. All Rights Reserved.</p>
-                <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 md:mt-0 justify-center md:justify-end">
+            <div className="container border-t border-white/10 pt-8 flex flex-col lg:flex-row justify-between items-center text-sm text-gray-400 text-center lg:text-left">
+                <p className="mb-4 lg:mb-0">&copy; 2026 Amol Ashtekar & Sons. All Rights Reserved.</p>
+                <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center lg:justify-end">
                     <Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
                     <Link to="/terms-and-conditions" className="hover:text-gold transition-colors">Terms of Service</Link>
                     <Link to="/refund-policy" className="hover:text-gold transition-colors">Refund Policy</Link>
