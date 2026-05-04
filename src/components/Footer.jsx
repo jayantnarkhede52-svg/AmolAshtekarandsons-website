@@ -126,9 +126,11 @@ const Footer = () => {
             {/* Bottom Footer */}
             <div className="container border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                 <p>&copy; 2026 Amol Ashtekar & Sons. All Rights Reserved.</p>
-                <div className="flex gap-6 mt-4 md:mt-0">
-                    <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
-                    <a href="#" className="hover:text-gold transition-colors">Terms of Service</a>
+                <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 md:mt-0 justify-center md:justify-end">
+                    <Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
+                    <Link to="/terms-and-conditions" className="hover:text-gold transition-colors">Terms of Service</Link>
+                    <Link to="/refund-policy" className="hover:text-gold transition-colors">Refund Policy</Link>
+                    <Link to="/shipping-policy" className="hover:text-gold transition-colors">Shipping Policy</Link>
                 </div>
             </div>
         </footer>

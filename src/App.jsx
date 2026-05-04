@@ -20,6 +20,10 @@ const Watches = lazy(() => import('./pages/Watches'));
 const MensWatches = lazy(() => import('./pages/MensWatches'));
 const WomensWatches = lazy(() => import('./pages/WomensWatches'));
 const FAQ = lazy(() => import('./pages/FAQ'));
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const RefundPolicy = lazy(() => import('./pages/RefundPolicy'));
+const ShippingPolicy = lazy(() => import('./pages/ShippingPolicy'));
 
 // Loading Fallback
 const LoadingSpinner = () => (
@@ -51,6 +55,10 @@ function App() {
                         <Route path="/collections/watches/men" element={<MensWatches />} />
                         <Route path="/collections/watches/women" element={<WomensWatches />} />
                         <Route path="/faq" element={<FAQ />} />
+                        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+                        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                        <Route path="/refund-policy" element={<RefundPolicy />} />
+                        <Route path="/shipping-policy" element={<ShippingPolicy />} />
                     </Routes>
                 </Suspense>
                 <Footer />
